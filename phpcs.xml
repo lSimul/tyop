@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<ruleset>
+	<arg name="tab-width" value="4"/>
+	<config name="installed_paths" value="vendor/slevomat/coding-standard,vendor/others/dubax-cs"/>
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+	<rule ref="Generic.Files.ByteOrderMark"/>
+	<rule ref="Generic.Formatting.SpaceAfterCast"/>
+	<rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>
+	<rule ref="Generic.Functions.OpeningFunctionBraceBsdAllman"/>
+	<rule ref="Generic.NamingConventions.ConstructorName"/>
+	<rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+	<rule ref="Generic.PHP.CharacterBeforePHPOpeningTag"/>
+	<rule ref="Generic.PHP.DeprecatedFunctions"/>
+	<rule ref="Generic.PHP.DisallowShortOpenTag"/>
+	<rule ref="Generic.PHP.ForbiddenFunctions"/>
+	<rule ref="Generic.PHP.LowerCaseConstant"/>
+	<rule ref="Generic.PHP.LowerCaseKeyword"/>
+	<rule ref="Generic.PHP.LowerCaseType"/>
+	<rule ref="Generic.Strings.UnnecessaryStringConcat">
+		<properties>
+			<property name="allowMultiline" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="Generic.WhiteSpace.ArbitraryParenthesesSpacing">
+		<properties>
+			<property name="ignoreNewlines" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<rule ref="Generic.WhiteSpace.IncrementDecrementSpacing"/>
+	<rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
+
+	<rule ref="PEAR.Classes.ClassDeclaration">
+		<exclude name="PEAR.Classes.ClassDeclaration.OpenBraceNotAlone"/>
+	</rule>
+	<rule ref="PEAR.Commenting.InlineComment"/>
+	<rule ref="PEAR.Formatting.MultiLineAssignment"/>
+	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceAfterOpenBracket"/>
+	<rule ref="PEAR.Functions.FunctionCallSignature.SpaceBeforeCloseBracket"/>
+	<rule ref="PEAR.WhiteSpace.ObjectOperatorIndent"/>
+
+	<rule ref="PSR2.ControlStructures.ControlStructureSpacing"/>
+	<rule ref="PSR2.ControlStructures.ElseIfDeclaration"/>
+	<rule ref="PSR2.Files.ClosingTag"/>
+	<rule ref="PSR2.Files.EndFileNewline"/>
+	<rule ref="PSR2.Methods.FunctionClosingBrace"/>
+	<rule ref="PSR2.Methods.MethodDeclaration"/>
+	<rule ref="PSR2.Namespaces.UseDeclaration"/>
+
+	<rule ref="SlevomatCodingStandard.Arrays.TrailingArrayComma"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.UselessConstantTypeHint"/>
+	<rule ref="SlevomatCodingStandard.ControlStructures.DisallowContinueWithoutIntegerOperandInSwitch"/>
+	<rule ref="SlevomatCodingStandard.ControlStructures.NewWithoutParentheses"/>
+	<rule ref="SlevomatCodingStandard.Functions.UnusedInheritedVariablePassedToClosure"/>
+	<rule ref="SlevomatCodingStandard.Functions.UselessParameterDefaultValue"/>
+	<rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInCall"/>
+	<rule ref="SlevomatCodingStandard.Functions.RequireTrailingCommaInDeclaration"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.UnusedUses">
+		<properties>
+			<property name="searchAnnotations" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="SlevomatCodingStandard.Whitespaces.DuplicateSpaces">
+		<properties>
+			<property name="ignoreSpacesBeforeAssignment" value="true"/>
+			<property name="ignoreSpacesInAnnotation" value="true"/>
+			<property name="ignoreSpacesInComment" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="SlevomatCodingStandard.Namespaces.UseFromSameNamespace"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.UselessAlias"/>
+	<rule ref="SlevomatCodingStandard.PHP.UselessSemicolon"/>
+	<rule ref="SlevomatCodingStandard.Variables.DuplicateAssignmentToVariable"/>
+	<rule ref="SlevomatCodingStandard.Exceptions.DeadCatch"/>
+	<rule ref="SlevomatCodingStandard.PHP.ShortList"/>
+	<rule ref="SlevomatCodingStandard.PHP.TypeCast"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.AlphabeticallySortedUses">
+		<properties>
+			<property name="caseSensitive" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="SlevomatCodingStandard.Namespaces.DisallowGroupUse"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.MultipleUsesPerLine"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceDeclaration"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.NamespaceSpacing"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.RequireOneNamespaceInFile"/>
+	<rule ref="SlevomatCodingStandard.Namespaces.UseDoesNotStartWithBackslash"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.ReturnTypeHintSpacing"/>
+	<rule ref="SlevomatCodingStandard.TypeHints.ParameterTypeHintSpacing"/>
+	<rule ref="SlevomatCodingStandard.Classes.PropertyDeclaration"/>
+
+	<rule ref="SlevomatCodingStandard.ControlStructures.DisallowYodaComparison"/>
+
+	<rule ref="Squiz.Classes.SelfMemberReference"/>
+	<rule ref="Squiz.Classes.ValidClassName"/>
+	<rule ref="Squiz.Commenting.FunctionComment.DuplicateReturn">
+		<message>Only 1 @return annotation is allowed in a function comment</message>
+	</rule>
+	<rule ref="Squiz.Commenting.FunctionComment.ExtraParamComment">
+		<message>Extra @param annotation</message>
+	</rule>
+	<rule ref="Squiz.Commenting.FunctionComment.MissingParamTag">
+		<message>@param annotation for parameter "%s" missing</message>
+	</rule>
+	<rule ref="Squiz.Strings.ConcatenationSpacing">
+		<properties>
+			<property name="spacing" value="1"/>
+			<property name="ignoreNewlines" value="true"/>
+		</properties>
+	</rule>
+	<rule ref="Squiz.Strings.DoubleQuoteUsage.NotRequired" />
+	<rule ref="Squiz.WhiteSpace.FunctionSpacing">
+		<properties>
+			<property name="spacing" value="1"/>
+			<property name="spacingBeforeFirst" value="0"/>
+			<property name="spacingAfterLast" value="0"/>
+		</properties>
+	</rule>
+	<rule ref="Squiz.WhiteSpace.SuperfluousWhitespace"/>
+	<rule ref="SlevomatCodingStandard.ControlStructures.UselessIfConditionWithReturn"/>
+</ruleset>
