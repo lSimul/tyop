@@ -1,0 +1,25 @@
+{
+	"name": "simul/tyop",
+	"description": "Solves most of the typos found in the Czech phrases.",
+	"license": [
+		"MIT"
+	],
+	"scripts": {
+		"test": "phpunit tests --display-warnings",
+		"lint": "phpcs -sq --report=emacs --standard=phpcs.xml --extensions=php --basepath=. src tests"
+	},
+	"autoload": {
+		"psr-4": {
+			"Simul\\Tyop\\": "src/"
+		}
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^10.4",
+		"slevomat/coding-standard": "^8.14"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
